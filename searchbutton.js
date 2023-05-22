@@ -8,7 +8,7 @@ var clicked = false;
          searchText.style.opacity = "100";
          searchText.style.translate = "00px";
          searchIcon.style.translate = "00px";
-         var elements = document.getElementsByClassName('searchbutton-container1');
+         var elements = document.getElementsByClassName('searchbutton-container-active');
          for (var i in elements) {
          if (elements.hasOwnProperty(i)) {
          elements[i].className = 'searchbutton-container';
@@ -25,7 +25,7 @@ var clicked = false;
         var elements = document.getElementsByClassName('searchbutton-container');
         for (var i in elements) {
         if (elements.hasOwnProperty(i)) {
-        elements[i].className = 'searchbutton-container1';
+        elements[i].className = 'searchbutton-container-active';
         }
         }
         clicked = true;

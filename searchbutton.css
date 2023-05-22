@@ -24,7 +24,7 @@
     transition: all 250ms;
 }
 
-.searchbutton-container1 {
+.searchbutton-container-active {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,10 +39,12 @@
     transition: all 500ms;
 }
 
-.searchbutton-container1:hover {
+/*
+.searchbutton-container-active:hover {
     background-color: var(--secondary600);
     transition: all 250ms;
 }
+*/
 
  .iconobuscar-lottie {
     width: 24px;
