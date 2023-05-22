@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCP / Animaciones</title>
+    <meta name="description" content="Sitio de prueba de animaciones para ViaBCP." />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="marketplace.css" media="screen" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h2>Hola, ¿qué necesitas hacer hoy?</h2>
+            <div class="items-container"> 
+                <div class="item" onmouseenter="cuenta.play(); cuenta.setDirection(1)" onmouseleave="cuenta.play(); cuenta.setDirection(-1)">
+                    <div class="hoverEffects">
+                        <lottie-player id="cuenta" class="cuentas-lottie" src="resources/lotties/marketplace-cuentas.json" background="transparent"></lottie-player>
+                    </div>
+                    <h3>Abrir una Cuenta</h3>
+                </div>
+                <div class="item" onmouseenter="tarjeta.play(); tarjeta.setDirection(1)" onmouseleave="tarjeta.play(); tarjeta.setDirection(-1)">
+                    <lottie-player id="tarjeta" class="cuentas-lottie" src="resources/lotties/marketplace-tarjeta.json" background="transparent"></lottie-player>
+                    <h3>Obtener Tarjeta de Crédito</h3>
+                </div>
+                <div class="item" onmouseenter="adelanto.play(); adelanto.setDirection(1)" onmouseleave="adelanto.play(); adelanto.setDirection(-1)">
+                    <lottie-player id="adelanto" class="cuentas-lottie" src="resources/lotties/marketplace-sueldo.json" background="transparent"></lottie-player>
+                    <h3>Adelantar mi Sueldo</h3>
+                </div>
+                <div class="item" onmouseenter="prestamo.play(); prestamo.setDirection(1)" onmouseleave="prestamo.play(); prestamo.setDirection(-1)">
+                    <lottie-player id="prestamo" class="cuentas-lottie" src="resources/lotties/marketplace-prestamo.json" background="transparent"></lottie-player>
+                    <h3>Solicitar un Préstamo</h3>
+                </div>
+                <div class="item" onmouseenter="soat.play(); soat.setDirection(1)" onmouseleave="soat.play(); soat.setDirection(-1)">
+                    <lottie-player id="soat" class="cuentas-lottie" src="resources/lotties/marketplace-soat.json" background="transparent"></lottie-player>
+                    <h3>SOAT desde S/45</h3>
+                </div>
+                <div class="item" onmouseenter="seguro.play(); seguro.setDirection(1)" onmouseleave="seguro.play(); seguro.setDirection(-1)">
+                    <lottie-player id="seguro" class="cuentas-lottie" src="resources/lotties/marketplace-seguros.json" background="transparent"></lottie-player>
+                    <h3>Proteger mis Tarjetas</h3>
+                </div>
+            </div>
+            <div class="icon-text">
+                <p>Descubre más</p>
+                <img class="icon" src="resources/icons/ic_angle_down_1.svg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

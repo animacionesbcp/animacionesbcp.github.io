@@ -1,0 +1,508 @@
+/* -------------------------------------------------- */
+/* Global styles */
+/* -------------------------------------------------- */
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --ontext: #202E44;
+    --primary900: #001F5A;
+    --primary800: #002473;
+    --primary700: #002A8D;
+    --primary600: #002DA0;
+    --primary500: #0030B3;
+    --primary400: #0A47F0;
+    --primary300: #3D77FF;
+    --primary200: #70A9FF;
+    --primary100: #B2D6FF;
+    --primary050: #D1E6FF;
+    --primary040: #EBF4FF;
+    --secondary900: #8F1100;
+    --secondary800: #B02B00;
+    --secondary700: #CA4500;
+    --secondary600: #E45E00;
+    --secondary500: #FF7800;
+    --secondary400: #FF961F;
+    --secondary300: #FFA733;
+    --secondary200: #FFBB5C;
+    --secondary100: #FFD89F;
+    --secondary050: #FFE8C7;
+    --secondary040: #FFF6E6;
+    --onsurface900: #4D5B70;
+    --onsurface800: #606C7F;
+    --onsurface700: #737E8E;
+    --onsurface600: #868F9E;
+    --onsurface500: #99A1AD;
+    --onsurface400: #ACB2BD;
+    --onsurface300: #BFC4CC;
+    --onsurface200: #D2D5DC;
+    --onsurface100: #E5E7EB;
+    --onsurface050: #EFF0F2;
+    --onsurface040: #F6F6F7;
+    --background900: #264B78;
+    --background800: #3C5D86;
+    --background700: #527094;
+    --background600: #6982A3;
+    --background500: #7F95B1;
+    --background400: #95A7BF;
+    --background300: #ACBACE;
+    --background200: #C2CCDC;
+    --background100: #D8DFEA;
+    --background050: #EAEFF5;
+    --background040: #F2F4F8;
+    --error: #E30425;
+    --errorlight: #FFF2F5;
+    --successdark: #37A500;
+    --success: #6AC90F;
+    --successlight: #F4FFEA;
+    --attention: #3F78BF;
+    --attentionlight: #F5F8FF;
+    --alert: #FFCB1F;
+    --alertlight: #FFFDED;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90vw;
+    min-height: 100vh;
+}
+
+/* -------------------------------------------------- */
+/* Typography styles */
+/* -------------------------------------------------- */
+
+@font-face {
+    font-family: flexo-bold;
+    src:url(resources/fonts/Flexo-Bold.otf)
+}
+
+@font-face {
+    font-family: flexo-demi;
+    src:url(resources/fonts/Flexo-Demi.otf)
+}
+
+@font-face {
+    font-family: flexo-regular;
+    src:url(resources/fonts/Flexo-Regular.otf)
+}
+
+.b-display-l {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.b-display-m {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+}
+
+.b-display-s {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 40x;
+    line-height: 48px;
+    margin: 0;
+}
+
+.b-h1 {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 32x;
+    line-height: 40px;
+    margin: 0;
+}
+
+.b-h2 {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 24x;
+    line-height: 32px;
+    margin: 0;
+}
+
+.b-h3 {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 20x;
+    line-height: 28px;
+    margin: 0;
+}
+
+.b-paragraph-l {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 16x;
+    line-height: 24px;
+    margin: 0;
+}
+
+.b-paragraph-m {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 14x;
+    line-height: 20px;
+    margin: 0;
+}
+
+.b-paragraph-s {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.b-character-l {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 16x;
+    line-height: 19px;
+    margin: 0;
+}
+
+.b-character-m {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 14x;
+    line-height: 17px;
+    margin: 0;
+}
+
+.b-character-s {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 12x;
+    line-height: 14px;
+    margin: 0;
+}
+
+.b-character-t {
+    font-family: flexo-bold, sans-serif;
+    font-style: normal;
+    font-size: 10x;
+    line-height: 12px;
+    margin: 0;
+}
+
+.d-display-l {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.d-display-m {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+}
+
+.d-display-s {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.d-h1 {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.d-h2 {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.d-h3 {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.d-paragraph-l {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.d-paragraph-m {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.d-paragraph-s {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 12x;
+    line-height: 18px;
+    margin: 0;
+}
+
+.d-character-l {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.d-character-m {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+}
+
+.d-character-s {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.d-character-t {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0;
+}
+
+.r-display-l {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.r-display-m {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+}
+
+.r-display-s {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.r-h1 {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.r-h2 {
+    font-family: flexo-demi, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.r-h3 {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.r-paragraph-l {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.r-paragraph-m {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.r-paragraph-s {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.r-character-l {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.r-character-m {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+}
+
+.r-character-s {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.r-character-t {
+    font-family: flexo-regular, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0;
+}
+
+
+/* -------------------------------------------------- */
+/* Media querys */
+/* -------------------------------------------------- */
+
+
+/* ------------------------------ */
+/* 375 */
+/* ------------------------------ */
+
+
+@media screen and (max-width: 375px) {
+
+
+
+}
+
+
+/* ------------------------------ */
+/* 376 - 570 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 376px) and (max-width: 570px) {
+
+
+
+}
+
+
+/* ------------------------------ */
+/* 571 - 640 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 571px) and (max-width: 640px) {
+
+
+
+}
+
+
+/* ------------------------------ */
+/* 641 - 834 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 641px) and (max-width: 834px) {
+
+
+
+}
+
+
+/* ------------------------------ */
+/* 835 - 1024 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 835px) and (max-width: 1024px) {
+
+
+
+}
+
+
+/* ------------------------------ */
+/* 1025 - 1280 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    
+
+}
+
+
+/* ------------------------------ */
+/* 1680 */
+/* ------------------------------ */
+
+
+@media screen and (min-width: 1680px) {
+
+    
+
+}

@@ -1,0 +1,55 @@
+/* ------------------------------ */
+/* Elements */
+/* ------------------------------ */
+
+.searchbutton-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 90px;
+    min-height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 500ms;
+
+}
+
+.searchbutton-container:hover {
+    background-color: var(--background040);
+    transition: all 250ms;
+}
+
+.searchbutton-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 64px;
+    min-height: 64px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    background-color: var(--secondary500);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.searchbutton-container1:hover {
+    background-color: var(--secondary600);
+    transition: all 250ms;
+}
+
+ .iconobuscar-lottie {
+    width: 24px;
+    height: 24px;
+    transition: all 500ms;
+ }
+
+ .d-paragraph-m {
+    transition: all 500ms;
+ }

@@ -1,0 +1,54 @@
+/* -------------------------------------------------- */
+/* Index */
+/* -------------------------------------------------- */
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    max-width: 580px;
+    padding-top: 100px;
+}
+
+.index-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.index-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.index-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.index-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 343px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+
+.index-link:hover {
+    background-color: var(--background040);
+    transition: background-color 250ms;
+}

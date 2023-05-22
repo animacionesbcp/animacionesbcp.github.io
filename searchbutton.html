@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCP / Animaciones</title>
+    <meta name="description" content="Sitio de prueba de animaciones para ViaBCP." />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="searchbutton.css" media="screen" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="searchbutton.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="centered-container">
+            <div class="searchbutton-container" id="searchLottie" onClick="playLottie();">
+                <lottie-player class="iconobuscar-lottie" id="searchIcon" src="resources/lotties/icono-buscar.json" background="transparent"></lottie-player>
+                <p class="d-paragraph-m" id="searchText" style="font-size: 15px; line-height: 15px;">Buscar</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
